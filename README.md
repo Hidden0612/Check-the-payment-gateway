@@ -10,6 +10,14 @@ pip install flask
 To update the number of banks, just add your data as below in the file **data.py**
 
 ```py
+
+"":{
+        "name":"",
+        "img":""
+},
+```
+Example :
+```py
 "603799":{
         "name":"بانک ملی ایران",
         "img":"images/bmi.png"
