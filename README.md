@@ -6,7 +6,7 @@
 pip install flask
 ```
 
-## Update
+## Add Bank
 To update the number of banks, just add your data as below in the file **data.py**
 
 ```py
