@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style-i.css') }}">
+    <title>Hello ...</title>
+</head>
+<body>
+<div class="background-one">
+  <div class="link-container">
+    <a class="link-one" href="payment-gateway" target="_blank">Payment Gateway</a>
+  </div>
+</div>
+<div class="background-two link-container">
+  <a class="link-two" href="{{ url_for('credit_card_search') }}" target="_blank">Credit Card</a>
+</div>
+<div class="background-three link-container">
+  <a class="link-three" href="national-code" target="_blank">National Code</a>
+</div>
+</body>
+</html>

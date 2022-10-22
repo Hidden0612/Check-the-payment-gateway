@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <meta charset="UTF-8">
+  <title>بررسی درگاه پرداخت</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style-pg.css') }}">
+</head>
+
+<body class="yekan">
+  <div id="container">
+    {% if stat %}
+    <div id="success-box">
+      <div class="dot"></div>
+      <div class="dot two"></div>
+      <div class="face">
+        <div class="eye"></div>
+        <div class="eye right"></div>
+        <div class="mouth happy"></div>
+      </div>
+      <div class="shadow scale"></div>
+      <div class="message">
+        <h1 class="alert">عالی</h1>
+        <p>درگاه بانکی مورد نظر معتبر میباشد</p>
+      </div>
+      <button class="button-box">
+        <h1 class="green"><a href="{{link}}">{{stat}}</a></h1>
+      </button>
+    </div>
+    {% else %}
+    <div id="error-box">
+      <div class="dot"></div>
+      <div class="dot two"></div>
+      <div class="face2">
+        <div class="eye"></div>
+        <div class="eye right"></div>
+        <div class="mouth sad"></div>
+      </div>
+      <div class="shadow move"></div>
+      <div class="message">
+        <h1 class="alert">اوه نه!</h1>
+        <p>درگاه بانکی مورد نظر نامعتبر و ممکن است فیشینگ باشد.
+      </div>
+      <button class="button-box">
+        <h1 class="red">دوباره امتحان کنید</h1>
+      </button>
+    </div>
+    {% endif %}
+  </div>
+
+</body>
+
+</html>

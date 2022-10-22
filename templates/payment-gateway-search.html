@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="{{ url_for('static', filename= 'css/style-cs.css') }}">
+    <title>بررسی درگاه پرداخت</title>
+</head>
+<body>
+<form action="{{ url_for('payment_gateway') }}" class="search-bar" method="GET">
+	<input type="search" name="link" pattern=".*\S.*" required>
+	<button class="search-btn" type="submit">
+		<span>جست و جو</span>
+	</button>
+</form>
+</body>
+</html>

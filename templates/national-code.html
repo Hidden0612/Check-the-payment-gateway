@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>بررسی سحت کد ملی</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style-nc.css') }}">
+</head>
+<body>
+      <div class="card">
+      {% if stat %}
+          <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
+              <i class="checkmark">✓</i>
+          </div>
+          <h1>موفقیت آمیز</h1>
+          <p>کد ملی وارد شده معتبر می باشد.<br/>کد ملی : {{code}}</p>
+      {% else %}
+          <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
+             <i class="checkmark" style="color: red">✘</i>
+          </div>
+          <h1 style="color: red">ناموفق</h1>
+          <p>کد ملی وارد شده معتبر نمی باشد.<br/>کد ملی : {{code}}</p>
+      {% endif %}
+     </div>
+</body>
+</html>

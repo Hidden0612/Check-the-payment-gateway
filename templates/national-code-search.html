@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style-cs.css') }}">
+    <title>بررسی صحت کد ملی</title>
+</head>
+<body>
+<form action="{{ url_for('national_code') }}" class="search-bar" method="GET">
+	<input type="search" name="code" pattern=".*\S.*" required>
+	<button class="search-btn" type="submit">
+		<span>جست و جو</span>
+	</button>
+</form>
+</body>
+</html>
